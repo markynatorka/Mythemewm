@@ -106,7 +106,8 @@ body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: opt
 .theme-dark .guild-1EfMGQ.unread-qLkInr:before {background: rgba(255,255,51,1)}
 
 /* Channels */
-.private-channels .channel .channel-name {opacity:1}
+.private-channels .channel .channel-name {opacity:1},
+.private-channels .channel .channel-name {color:#000}
 .iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H,
 .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {color: #000} 
 .container-1UB9sr {background: rgba(0, 0, 0, 0);border-bottom:none;padding: 1px}
