@@ -116,6 +116,8 @@ body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: opt
 .unread-1Dp-OI {background: rgba(255,255,51,1)}
 .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active {background-color: var(--mc)}
 .nameDefaultText-24KCy5 {color: #000} 
+.nameUnreadText-DfkrI4, .nameUnreadVoice-EVo-wI {color: #fff}
+
 /* Menus */
 .theme-dark .search-results-wrap .search-header {background-color: rgba(0, 0, 0, 0)}
 .theme-dark .searchPopout-1vUlP3 {background-color: rgba(0, 0, 0, 0.9)}
