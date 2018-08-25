@@ -1,0 +1,153 @@
+//META{"name":"My Theme Winter Moon Edition","description":"Mark's theme with a Winter Moon wallpaper.","author":"Mark (based off of Satoru's Starter Theme)","version":"1.0"}*//{}
+
+@import url();  /* Import your link here. This is the link to your MyTheme.css file on your github page. */
+@import url(https://satoru8.github.io/Addons/FriendsList.css);
+@import url(https://satoru8.github.io/Addons/LargeChatAvatars.css);
+@import url(https://satoru8.github.io/Addons/ServerColumnX2.css);
+@import url(https://satoru8.github.io/Addons/MemberlistPopout.css);
+
+.appMount-3VJmYg {background: url(https://raw.githubusercontent.com/markynatorka/DiscordTheme/master/wm_100_episodes_by_merryweathery-dc43s94.jpg) center/cover no-repeat} /* Background */
+:root {
+    --light: rgba(0, 0, 0, .0); /* Overall brightness. 1= black, 0 = transparent */
+    --userlight:rgba(0, 0, 0, 0);		/* Brightness for the userpopouts */
+	--mc: hsla(150, 37%, 48%, 0.7);		/* Main colour. Larger items, backgrounds. */
+	--sc: hsla(285, 55%, 30%, 1);	/* Accent/Secondary colour. Borders, notifications & such.  */
+    --lightgreen: hsla(93, 100%, 40%, 0.7);
+	--font: sans-serif;	
+	--font-size: 19px;
+	--text:  #5e9eff; /* Chat text colour. */
+	--size1: 75px; /* Avatar Size */
+    --round1: 25%;  /* Avatar roundness 50% Circle. */
+    --margin1: 0px; /* Margin left/right */
+    --margin2: 0px; /* Margin top/bottom */
+    --shadow1: 0 0 2px #000; /* Shadow for transparent themes. */ 
+}
+
+/*  Your META and root should be in your MyTheme.theme.css To give to other people. ^^^^
+
+Everything below goes in to a new file, MyTheme.css for import */
+
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {border-radius:1px!important;border-color: transparent !important;background: var(--sc) !important;} 
+::-webkit-scrollbar, ::-webkit-scrollbar-track-piece {width:8px !important;border-color: transparent !important; background: transparent !important;} 
+::-webkit-scrollbar-corner {display: none !important}
+::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, 0)!important}
+
+/* Main background/TitleBar etc */
+.theme-dark .container-2lgZY8,.theme-dark .ui-standard-sidebar-view,.titleBar-AC4pGV::after {background-color: var(--light)} /* Brightness */
+.titleBar-AC4pGV::after {content:""; position:absolute; z-index:-1; top:0; left:0; right:0; width:100%; height:22px} /* Titlebar layer */
+
+/* Main Transparency */
+.theme-dark .chat-3bRxxu,.theme-dark .guildsWrapper-5TJh6A,.theme-dark .layer-3QrUeG,
+.theme-dark .chat-3bRxxu>.content-yTz4x3, .theme-dark .chat-3bRxxu form, .flex-horizontal>.flex-spacer, 
+.theme-dark .uploadModal-2ifh8j .footer-3mqk7D, .theme-dark #friends, 
+.theme-dark .activityFeed-28jde9, .theme-dark .footer-2yfCgX, .theme-dark .headerBar-UHpsPw, 
+.theme-dark .channels-Ie2l6A, .theme-dark .container-PNkimc, .theme-dark .ui-standard-sidebar-view .sidebar-region, 
+.theme-dark .ui-standard-sidebar-view .content-region, .theme-dark .layers-3iHuyZ, .theme-dark .guildsWrapper-5TJh6A .guilds-1q_RqH, 
+.theme-dark .chat-3bRxxu .content-yTz4x3, .theme-dark .members-1998pB, .theme-dark .title-3qD0b-, .theme-dark .scroller-2v3d_F, 
+.theme-dark .header-2o-2hj, .theme-dark .container-2Thooq,.theme-dark .messagesWrapper-3lZDfY,.theme-dark .gameLibrary-TTDw4Y  {background: transparent !important;background-color: transparent !important}
+.theme-dark .wrapper-29NfPK {background: transparent;background-color:transparent}
+
+.video-1FfuMD,
+.theme-dark .private-channel-call {
+    background-color: rgba(0,0,0,0);
+}
+
+.markup-2BOw-j:not(code) {font-size: var(--font-size)!important;}  /* Changes font size of user text, not including code. */
+.theme-dark .containerCozy-jafyvG .markup-2BOw-j {color: var(--text)} /* Text colour */
+
+.theme-dark .iconBadge-2dji3k {border-color: #fff}
+.theme-dark .iconBadge-2dji3k:hover {border-color: #eee}
+
+.wordmark-2iDDfm svg > path {fill:#fff}
+.winButtonClose-1HsbF- > svg > polygon  {fill:#fff}
+.winButtonMinMax-PBQ2gm > svg > rect {stroke:#fff}
+.winButton-iRh8-Z {opacity: 1}
+.theme-dark .iconForeground-3y9f0B, .theme-dark .title-1aVOXw {color: #fff}
+.theme-dark .title-3qD0b- {box-shadow:0 0 0 transparent}
+.theme-dark .backdrop-1wrmKB {opacity: .3 !important}
+
+input{background: #f6f6f6}
+body,span:not(.spinner-item){-webkit-font-smoothing:optimizeLegibility !important;-webkit-backface-visibility:hidden;}
+body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: optimizeLegibility !important; font-smoothing: antialiased !important}
+.theme-dark ::selection {background: rgba(0, 0, 0, 0.7);color:rgb(255, 255, 0)}
+.theme-dark ::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.8) !important}
+
+/* Chat Area */
+.username-_4ZSMR, .usernameWrapper-1S-G5O .username-_4ZSMR {font-weight: 600;text-shadow:0 0 3px rgb(0, 0, 0);border-radius:10%}/* User Name */
+.theme-dark .timestampCozy-2hLAPV {color: #fff}
+.theme-dark .autocomplete-1vrmpx {background-color: rgba(0, 0, 0, 0.9)}
+.theme-dark .inner-zqa7da {background-color: hsla(0, 0%, 0%, 0.0);box-shadow: 0 0 3px 1px rgba(81, 132, 184, 1) } /* Chat box */
+#app-mount .typing-2GQL18 {background: transparent}
+.theme-dark .markup-2BOw-j pre {background: rgba(0, 0, 0, 0.4);border-color: var(--sc)}
+.theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {background: rgba(0, 0, 0, 0.7)}
+.theme-dark .markup-2BOw-j a {color: #0096cf;background:rgba(0, 0, 0, 0.3)}
+
+/* Activity */
+.theme-dark .splashArt-1anaP9 {opacity:1;filter:none}
+.theme-dark .card-7JP0BX {background-color: rgba(0, 0, 0, 0.8);color: #fff;}
+.theme-dark .splashArt-3yFzRe {width: 100%;filter: grayscale(0%);opacity: 1;-webkit-mask: radial-gradient(100% 100% at top left,hsla(0,0%,100%,.3) 0,hsla(0,0%,100%,.4) 100%)}
+
+/* Library */
+.theme-dark .rowBackground-3MeNoN {filter:none;-webkit-mask:none;opacity:.7}
+
+/* Members Area */
+.theme-dark .membersGroup-v9BXpm {color: #fff;text-align:center}
+.theme-dark .activity-1IYsbk {color: #babcbf}
+.theme-dark .member-3W1lQa.popout-open .content-OzHfo4,.theme-dark .member-3W1lQa:hover .content-OzHfo4, .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {background:var(--mc)}
+/* User Popout */
+.userPopout-3XzG_A {background: url(https://raw.githubusercontent.com/markynatorka/DiscordTheme/TestTheme/ryI1GLXDb.gif) center/cover no-repeat}
+.userPopout-3XzG_A .activity-11LB_k {background-color: rgba(0,0,0,.0)}
+.userPopout-3XzG_A .header-2BwW8b,.userPopout-3XzG_A .body-3iLsc4,.userPopout-3XzG_A .footer-1fjuF6,
+.userPopout-3XzG_A .quickMessage-1yeL4E,.userPopout-3XzG_A .note-3kmerW textarea:focus {background: var(--userlight)!important}
+.userPopout-3XzG_A .tip-2ab612,.userPopout-3XzG_A .bodyTitle-Y0qMQz {color: #fff}
+
+/* Guilds */
+.theme-dark .guildSeparator-1X4GQ1:after{display:none}
+.theme-dark .friendsOnline-_wi_fM{color:#fff}
+.theme-dark .guild-1EfMGQ.unread-qLkInr:before {background: rgba(255,255,51,1)}
+
+/* Channels */
+.private-channels .channel .channel-name {opacity:1}
+.iconCollapsed-3hFp_8, .iconDefault-3Gr8d2, .nameCollapsed-34uFWo, .nameDefault-2DI02H,
+.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {color: #fff} 
+.container-1UB9sr {background: rgba(0, 0, 0, 0);border-bottom:none;padding: 1px}
+.nameDefault-2s3kbY {color: #fff}
+.contentConnectedVoice-qL-YrL:active, .contentSelectedVoice-1WDIBM:active,
+.contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {background-color: var(--lightgreen)}
+.unread-1Dp-OI {background: rgba(255,255,51,1)}
+.contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO:active {background-color: var(--mc)}
+/* Menus */
+.theme-dark .search-results-wrap .search-header {background-color: rgba(0, 0, 0, 0)}
+.theme-dark .searchPopout-1vUlP3 {background-color: rgba(0, 0, 0, 0.9)}
+.theme-dark .search-results-wrap {background-color: rgba(0, 0, 0, 0.4)}
+.theme-dark .search-results-wrap .search-result .search-result-message.hit {border: 2px solid var(--sc)}
+.theme-dark .search-results-wrap .search-result .hit {background-color: rgba(0, 0, 0, 0.7);box-shadow: 0 0 10px 0px var(--sc)}
+.theme-dark .search-results-wrap .search-result:before,.theme-dark .search-results-wrap .search-result:after {display:none}
+
+.menu-Sp6bN1:not(.alt-3btY0e) {background:rgba(0, 0, 0, 0.93)}
+.menu-Sp6bN1.alt-3btY0e{background:rgba(0, 0, 0, 0.9)}
+.theme-dark .item-1GzJrl {color: #fff}
+
+.theme-dark .header-ykumBX {background:rgba(0, 0, 0, 0.0)}
+.theme-dark .messagesPopoutWrap-1MQ1bW {background:rgba(0, 0, 0, 0.8)}
+.theme-dark .messageGroupWrapper-o-Zw7G {background-color: rgba(45, 45, 45, 0.9);border-color: var(--sc)}
+
+.theme-dark  .uploadModal-2ifh8j {background: rgba(0, 0, 0, 0.85)}
+
+
+.theme-dark .actionButton-VzECiy {
+    background-color: #FF1177;
+    color: #000;
+}
+.role-2irmRk .roleName-32vpEy {
+    color: #000;
+}
+
+#bd-settingspane-container .content-column.default .bda-slist::before {content: "Changelog: v1.2 Store/Library update."}
+#bd-settingspane-container .bda-slist::before {
+    background: rgba(67, 181, 129, 0.8);display: block;
+    padding: 5px 10px;margin-bottom: 10px;border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 600;margin-top: 2px;color: #fff}
