@@ -80,8 +80,8 @@ body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: opt
 .theme-dark .markup-2BOw-j pre {background: rgba(0, 0, 0, 0.4);border-color: var(--sc)}
 .theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {background: rgba(0, 0, 0, 0.7)}
 .theme-dark .markup-2BOw-j a {color: #0096cf;background:rgba(0, 0, 0, 0.3)}
-..textArea-2Spzkt {color: #000}
-.isSending-1nPcL7 {color: #000}
+#app-mount .textArea-2Spzkt {color: #000}
+#app-mount .isSending-1nPcL7 {color: #000}
 
 /* Activity */
 .theme-dark .splashArt-1anaP9 {opacity:1;filter:none}
