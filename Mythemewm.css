@@ -80,6 +80,7 @@ body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: opt
 .theme-dark .markup-2BOw-j pre {background: rgba(0, 0, 0, 0.4);border-color: var(--sc)}
 .theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {background: rgba(0, 0, 0, 0.7)}
 .theme-dark .markup-2BOw-j a {color: #0096cf;background:rgba(0, 0, 0, 0.3)}
+..textArea-2Spzkt {color: #000}
 
 /* Activity */
 .theme-dark .splashArt-1anaP9 {opacity:1;filter:none}
@@ -145,6 +146,18 @@ body,h1,h2,h3,h4,h5,h6 {color: #fff);font-family:var(--font);text-rendering: opt
 .role-2irmRk .roleName-32vpEy {
     color: #000;
 }
+
+/* Store */
+.theme-dark .applicationStore-1pNvnv,.theme-dark .itemBackground-1jfD8p  {background-color: transparent}
+.scroller-2FKFPG::-webkit-scrollbar-track {display:none}
+.theme-dark .tile-2H4MQG {background-color: rgba(0, 0, 0, 0.6);box-shadow: 0 0 2px rgba(0, 102, 255, 0.7)}
+.theme-dark .tile-2H4MQG:hover {background-color: rgba(0, 0, 0, 0.71);box-shadow: 0 0 3px rgba(0, 102, 255, 0.9)}
+.gameTitle-1GKhmx {text-align:center}
+.theme-dark .itemBackground-1jfD8p:before {background: radial-gradient(ellipse at top,transparent,rgba(0, 0, 0, 0.6)),linear-gradient(90deg,rgba(0, 0, 0, 0.6) 0,transparent 40%,transparent 60%,rgba(0, 0, 0, 0.6)),linear-gradient(0deg,rgba(0, 0, 0, 0.6) 0,transparent 25%)}
+
+/* Discord Icon */
+.homeIcon-1FoKUJ g{display:none}
+svg.homeIcon-1FoKUJ{background: url(https://raw.githubusercontent.com/markynatorka/Mythemewm/master/10_EC8DB8EB84A4EC9DBC_ipad.jpg) no-repeat center/cover}
 
 #bd-settingspane-container .content-column.default .bda-slist::before {content: "Changelog: v1.2 Store/Library update."}
 #bd-settingspane-container .bda-slist::before {
